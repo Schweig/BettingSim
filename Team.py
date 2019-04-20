@@ -19,15 +19,18 @@ class Team:
 
     def allowed_run_home(self):
         self.home_allowed+=1
-
+        self.total_allowed+=1
     def scored_run_home(self):
         self.home_scored+=1
+        self.total_scored += 1
 
     def allowed_run_away(self):
         self.away_allowed += 1
+        self.total_allowed += 1
 
     def scored_run_away(self):
         self.away_scored += 1
+        self.total_scored +=1
 
     def played_game(self,type):
         if type is "home":
